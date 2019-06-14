@@ -1,0 +1,6 @@
+select A.* from Article A inner join Article_has_Tags H on A.id=H.Article_id inner join Tags T on H.Tags_id=T.id where T. tag_name in('php','c++')
+
+
+
+
+select A.* from Article A inner join Article_has_Tags H on A.id=H.Article_id inner join Tags T on H.Tags_id=T.id where T. tag_name='php' and T. tag_name='c++'

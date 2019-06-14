@@ -1,0 +1,4 @@
+select p2.title,p2.content,t1.`name` from p_t p1,post p2,tag t1 where p1.post_id= p2.id and t1.id = p1.tag_id
+
+
+select p.id, p.title,p.content from tag t, post p,p_t o where t.name="python" and o.post_id=p.id and o.tag_id=t.id
