@@ -11,10 +11,10 @@ var result = [
 ]
 
 var axios = {
-    request(token){
+    request(){
         return new Promise((resolve,reject)=>{
             setTimeout(()=>{
-                let res = result[Math.round(Math.random())]
+                let res = result[1]
                 resolve(res)
             },1000)
         })
@@ -22,7 +22,7 @@ var axios = {
 }
 function request(token) {
 
-    return axios.request(token).then(response=>{
+    return axios.request().then(response=>{
         if(response.code==200){
             return response
         }else{
