@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/clm1100/reresh_token#readme",
   "dependencies": {
-    "axios": "^0.19.0"
+    "axios": "^0.21.1"
   }
 }
